@@ -1,8 +1,7 @@
 fn main() {
-    let x = 5; // Inmutable
-    println!("El valor de x es: {}", x);
+    let mut y = 10; // Mutable
+    println!("El valor de y es: {}", y);
 
-    // Si intentas hacer esto, el compilador dará un error:
-    // x = 6; // Error: cannot assign twice to immutable variable `x`
-    // ¡Inténtalo! Es bueno ver los famosos errores amigables de Rust.
+    y = 15; // ¡Esto ahora es válido!
+    println!("El nuevo valor de y es: {}", y);
 }
